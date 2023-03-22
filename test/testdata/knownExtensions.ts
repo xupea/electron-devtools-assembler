@@ -3,7 +3,7 @@ import {
   REACT_DEVELOPER_TOOLS,
   BACKBONE_DEBUGGER,
   JQUERY_DEBUGGER,
-  ANGULARJS_BATARANG,
+  ANGULAR_DEVTOOLS,
   VUEJS_DEVTOOLS,
   REDUX_DEVTOOLS,
   CYCLEJS_DEVTOOL,
@@ -29,8 +29,8 @@ const knownExtensions = [
     description: 'jQuery Debugger',
   },
   {
-    ...ANGULARJS_BATARANG,
-    description: 'AngularJS Batarang',
+    ...ANGULAR_DEVTOOLS,
+    description: 'Angular DevTools',
   },
   {
     ...VUEJS_DEVTOOLS,
