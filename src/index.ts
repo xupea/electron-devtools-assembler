@@ -165,10 +165,6 @@ export const VUEJS_DEVTOOLS: ExtensionReference = {
   id: 'nhdogjmejiglipccpnnnanhbledajbpd',
   electron: '>=1.2.1',
 };
-export const VUEJS3_DEVTOOLS: ExtensionReference = {
-  id: 'ljjemllljcmogpfapbkkighbhhppjdbg',
-  electron: '>=1.2.1',
-};
 export const REDUX_DEVTOOLS: ExtensionReference = {
   id: 'lmhkpmbekcpmknklioeibfkpmmfibljd',
   electron: '>=1.2.1',
