@@ -6,7 +6,6 @@ import {
   ANGULAR_DEVTOOLS,
   VUEJS_DEVTOOLS,
   REDUX_DEVTOOLS,
-  CYCLEJS_DEVTOOL,
   APOLLO_DEVELOPER_TOOLS,
   MOBX_DEVTOOLS,
 } from '../../src/';
@@ -39,10 +38,6 @@ const knownExtensions = [
   {
     ...REDUX_DEVTOOLS,
     description: 'Redux DevTools',
-  },
-  {
-    ...CYCLEJS_DEVTOOL,
-    description: 'Cycle.js',
   },
   // {
   //   ...APOLLO_DEVELOPER_TOOLS,

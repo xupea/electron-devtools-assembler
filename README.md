@@ -1,10 +1,10 @@
 Electron DevTools Installer
 ---------------------------
 
-![CircleCI](https://img.shields.io/circleci/build/github/MarshallOfSound/electron-devtools-installer?style=for-the-badge)
-[![npm](https://img.shields.io/npm/v/electron-devtools-installer?style=for-the-badge)](https://www.npmjs.com/package/electron-devtools-installer)
-![npm](https://img.shields.io/npm/dt/electron-devtools-installer?style=for-the-badge)
-[![license](https://img.shields.io/github/license/GPMDP/electron-devtools-installer.svg?maxAge=2592000&style=for-the-badge)](https://github.com/GPMDP/electron-devtools-installer/blob/master/LICENSE)
+![CircleCI](https://img.shields.io/circleci/build/github/xupea/electron-devtools-installer?style=for-the-badge)
+[![npm](https://img.shields.io/npm/v/electron-devtools-assembler?style=for-the-badge)](https://www.npmjs.com/package/electron-devtools-assembler)
+![npm](https://img.shields.io/npm/dt/electron-devtools-assembler?style=for-the-badge)
+[![license](https://img.shields.io/github/license/xupea/electron-devtools-installer.svg?maxAge=2592000&style=for-the-badge)](https://github.com/xupea/electron-devtools-installer/blob/master/LICENSE)
 [![CFA Enabled](https://img.shields.io/badge/CFA-Enabled-success?style=for-the-badge)](https://github.com/continuousauth)
 
 This is an easy way to install DevTool extensions into Electron.  You shouldn't
@@ -14,21 +14,21 @@ then configuring the path for everyone's machines.
 ## Install
 
 ```
-npm install electron-devtools-installer --save-dev
+npm install electron-devtools-assembler --save-dev
 ```
 or
 ```
-yarn add electron-devtools-installer -D
+yarn add electron-devtools-assembler -D
 ```
 
 ## Usage
 All you have to do now is this in the **main** process of your application.
 
 ```js
-import installExtension, { REDUX_DEVTOOLS } from 'electron-devtools-installer';
+import installExtension, { REDUX_DEVTOOLS } from 'electron-devtools-assembler';
 // Or if you can not use ES6 imports
 /**
-const { default: installExtension, REACT_DEVELOPER_TOOLS } = require('electron-devtools-installer');
+const { default: installExtension, REACT_DEVELOPER_TOOLS } = require('electron-devtools-assembler');
 */
 const { app } = require('electron');
 
@@ -54,7 +54,7 @@ import installExtension, {
   ANGULAR_DEVTOOLS, VUEJS_DEVTOOLS,
   REDUX_DEVTOOLS, CYCLEJS_DEVTOOL, 
   MOBX_DEVTOOLS, APOLLO_DEVELOPER_TOOLS,
-} from 'electron-devtools-installer';
+} from 'electron-devtools-assembler';
 ```
 
 ## How does it work?

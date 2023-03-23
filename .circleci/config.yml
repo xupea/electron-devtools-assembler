@@ -26,11 +26,11 @@ jobs:
 
   release:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:14
     steps:
       - checkout
       - run: npx yarn
-      - run: npx semantic-release
+      - run: npx semantic-release@19
 
 workflows:
   version: 2
@@ -38,31 +38,11 @@ workflows:
     # Run the test jobs first, then the release only when all the test jobs are successful
     jobs:
       - test-electron:
-          name: test-electron-4
-          electron_version: ^4.0.0
-      - test-electron:
-          name: test-electron-5
-          electron_version: ^5.0.0
-      - test-electron:
-          name: test-electron-6
-          electron_version: ^6.0.0
-      - test-electron:
-          name: test-electron-7
-          electron_version: ^7.0.0
-      - test-electron:
-          name: test-electron-8
-          electron_version: ^8.0.0
-      - test-electron:
-          name: test-electron-9
-          electron_version: ^9.0.0
+          name: test-electron-12
+          electron_version: ^12.0.0
       - release:
           requires:
-            - test-electron-4
-            - test-electron-5
-            - test-electron-6
-            - test-electron-7
-            - test-electron-8
-            - test-electron-9
+            - test-electron-12
           filters:
             branches:
               only:

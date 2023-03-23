@@ -169,10 +169,6 @@ export const REDUX_DEVTOOLS: ExtensionReference = {
   id: 'lmhkpmbekcpmknklioeibfkpmmfibljd',
   electron: '>=1.2.1',
 };
-export const CYCLEJS_DEVTOOL: ExtensionReference = {
-  id: 'dfgplfmhhmdekalbpejekgfegkonjpfp',
-  electron: '>=1.2.1',
-};
 export const APOLLO_DEVELOPER_TOOLS: ExtensionReference = {
   id: 'jdkknkkbebbapilgoeccciglkfbmbnfm',
   electron: '>=1.2.1',
