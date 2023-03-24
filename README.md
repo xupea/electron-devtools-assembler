@@ -52,8 +52,8 @@ import installExtension, {
   EMBER_INSPECTOR, REACT_DEVELOPER_TOOLS,
   BACKBONE_DEBUGGER, JQUERY_DEBUGGER,
   ANGULAR_DEVTOOLS, VUEJS_DEVTOOLS,
-  REDUX_DEVTOOLS, CYCLEJS_DEVTOOL, 
-  MOBX_DEVTOOLS, APOLLO_DEVELOPER_TOOLS,
+  REDUX_DEVTOOLS, MOBX_DEVTOOLS, 
+  APOLLO_DEVELOPER_TOOLS,
 } from 'electron-devtools-assembler';
 ```
 
@@ -72,7 +72,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Samuel Attard
+Copyright (c) 2023 Peter Xu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
