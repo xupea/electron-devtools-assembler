@@ -12,7 +12,7 @@ if (fs.existsSync(getIDMapPath())) {
   try {
     IDMap = JSON.parse(fs.readFileSync(getIDMapPath(), 'utf8'));
   } catch (err) {
-    console.error('electron-devtools-installer: Invalid JSON present in the IDMap file');
+    console.error('electron-devtools-assembler: Invalid JSON present in the IDMap file');
   }
 }
 
@@ -55,7 +55,7 @@ const install = (
 
   if (process.type !== 'browser') {
     return Promise.reject(
-      new Error('electron-devtools-installer can only be used from the main process'),
+      new Error('electron-devtools-assembler can only be used from the main process'),
     );
   }
 
