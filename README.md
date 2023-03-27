@@ -109,6 +109,12 @@ before loading it into Electron.
 | APOLLO_DEVELOPER_TOOLS | 4.1.4   | 23.0.0   | ✅    |
 | MOBX_DEVTOOLS          | 0.9.26  | 23.0.0   | ✅    |
 
+## Resource
+
+https://www.electronjs.org/docs/latest/api/extensions#chromedevtoolsinspectedwindow
+
+https://developer.chrome.com/docs/extensions/migrating/mv2-sunset/
+
 
 License
 -------
