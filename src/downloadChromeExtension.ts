@@ -21,7 +21,7 @@ const downloadChromeExtension = (
       if (fs.existsSync(extensionFolder)) {
         rimraf.sync(extensionFolder);
       }
-      const fileURL = `https://www.xupea.com/crx/${chromeStoreID}.crx`; // eslint-disable-line
+      const fileURL = `https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&x=id%3D${chromeStoreID}%26uc&prodversion=${process.versions.chrome}`; // eslint-disable-line
       const filePath = path.resolve(`${extensionFolder}.crx`);
       downloadFile(fileURL, filePath)
         .then(() => {
